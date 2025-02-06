@@ -1,11 +1,11 @@
-Lua Software's first in-browser game!
+Platinum Experience's first game!
 # Pokèmon TCG Online 🌐
 Welcome to an Unofficial-Pokèmon TCG Game!<br>
 If you want you can contribute to the official game here.<br>
 It is built for the browser and mobile devices.
 ## Dependencies 🤔
 Thinking about making your own modded or custom version of TCG Game?<br>
-Run this script made by me.
+Run this script made by Platinum Experiences's liablelua on GitHub.
 ```bat
 @ECHO off
 title TCG Game Builder
@@ -36,6 +36,8 @@ No custom cards can be added by Contribution unless your making an event inside 
 ## Future of Lua Software
 We should be rebranding soon because unfortunately I set the Copyright to 2025 on this Project and other Projects have @ 2024.<br>
 I would have to change ALL of the copyrights which I don't wanna do.<br>
-Also thanks MIT for free Copyright!!!!
+Also thanks MIT for free Copyright!!!!<br>
+Lua Software is still as-is I just switched to Platinum Experiences!<br>
+I'm gonna have fun creating a logo for this.
 ## Donation
 Lets keep it simple, my CashApp tag is $auto445.
