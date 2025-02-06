@@ -1,4 +1,5 @@
-Platinum Experience's first game!
+![image](https://github.com/user-attachments/assets/13dd7f76-ed73-4db5-a948-10ac7c4b0661)
+
 # Pokèmon TCG Online 🌐
 Welcome to an Unofficial-Pokèmon TCG Game!<br>
 If you want you can contribute to the official game here.<br>
