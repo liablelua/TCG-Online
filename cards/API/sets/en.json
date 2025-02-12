@@ -2885,5 +2885,9 @@
       "symbol": "https://images.pokemontcg.io/sv8pt5/symbol.png",
       "logo": "https://images.pokemontcg.io/sv8pt5/logo.png"
     }
+  },
+  {
+    "id": "a_goldrevolutions",
+    "name": "Gold Revolutions"
   }
 ]

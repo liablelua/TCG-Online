@@ -1,0 +1,1392 @@
+
+
+[
+  {
+    "__comment": [
+      "Warning: ",
+      "This Pack is created by TCG Online owners"
+    ],
+    "id": "gold-mew",
+    "name": "Mew EX",
+    "rarity": "Gold",
+    "images": {
+      "small": "https://lh4.googleusercontent.com/proxy/-m7GmLdYzXCFp--Iui9OcDPJwbCk_1i8ww0mZJGAkhWvz9wPpDsuzebWFhhiBk2cHXzhYws1Or-mFS0_NGPUiQkPPOC82NqW8mJeThxb1gKF4gOBJwXPR_Y6q46AeRldoQRDf1dOKELJHB97zN_6Hjv3xMaDKxt2Vqbs03w"
+    }
+  },
+  {
+    "id": "gold-charry",
+    "name": "Charizard EX",
+    "rarity": "Gold",
+    "images": {
+      "small": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFCC-k-4xZtBtV47H2Jq02nCKI3uB0I44lDQ&s"
+    }
+  },
+  {
+    "id": "gold-mewtwo",
+    "name": "Mewtwo EX",
+    "rarity": "Gold",
+    "images": {
+      "small": "https://images.mobi.gg/uploads/2024/11/mewtwo-ex-gold-pokemon-tcg-pocket-best-cards.webp"
+    }
+  },
+  {
+    "id": "gold-grigid",
+    "name": "Rigid Band",
+    "rarity": "Gold",
+    "images": {
+      "small": "/gold band.png"
+    }
+  },
+  {
+    "id": "gold-godrigid",
+    "name": "Rigid Band Godlike",
+    "rarity": "Ultra Rare",
+    "images": {
+      "small": "/godlike rigid.png"
+    }
+  },
+  {
+    "id": "gold-ultband",
+    "name": "Rigid Band Ultimate",
+    "rarity": "Ultra Rare",
+    "images": {
+      "small": "/Rigid Band Ultimate!.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },
+  {
+    "id": "gold-holoband",
+    "name": "Rigid Band",
+    "rarity": "Rare Holo",
+    "images": {
+      "small": "/holoband.png"
+    }
+  },
+  {
+    "id": "gold-revholoband",
+    "name": "Rigid Band",
+    "rarity": "Rare Holo",
+    "images": {
+      "small": "/reverseholoband.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-rigidband",
+    "name": "Rigid Band",
+    "rarity": "Common",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEW/MEW_165_R_EN_SM.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  },  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Grass",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsg.png"
+    }
+  },
+  {
+    "id": "gold-grassrigid",
+    "name": "Rigid Band Water",
+    "rarity": "Rare",
+    "images": {
+      "small": "/rigidbandsw.png"
+    }
+  },
+  {
+    "id": "gold-bandX",
+    "name": "Rigid Band X",
+    "rarity": "Rare",
+    "images": {
+      "small": "./rigidbandX.png"
+    }
+  }
+]

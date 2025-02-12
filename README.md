@@ -1,44 +1,34 @@
-![image](https://github.com/user-attachments/assets/13dd7f76-ed73-4db5-a948-10ac7c4b0661)
-
-# Pokèmon TCG Online 🌐
-Welcome to an Unofficial-Pokèmon TCG Game!<br>
-If you want you can contribute to the official game here.<br>
-It is built for the browser and mobile devices.
-## Dependencies 🤔
-Thinking about making your own modded or custom version of TCG Game?<br>
-Run this script made by Platinum Experiences's liablelua on GitHub.
-```bat
-@ECHO off
-title TCG Game Builder
-echo Downloading TCG Game via Git.
-git clone https://github.com/liablelua/pokemon-tcg-game.git
-cd pokemon-tcg-game
-cd cards
-npm install
-node server.js
-```
-## PokemonTCG.io API 🎉
-We use the [PokemonTCG.io API](https://pokemontcg.io/) to grab Card Packs, Pokemon Info, and more.<br>
-You can learn more at [PokemonTCG.io Dashboard](https://dev.pokemontcg.io/dashboard)!
-## Custom Cards?
-Did you really notice or are you reading our Documentation to make a super-bad version of a Ultra Super Modded TCG Game?<br>
-Either way, yes!<br>
-These cards are Gold, Diamond, and Final Forms of certain things. (Mainly: Pikachu and Mewtwo) for now at least.<br>
-Yeah, yeah, you can change it for yourself blah blah blah but I don't wanna hear about your SUPER AWESOME modded version of this game.
-## Why Open-Source?
-I feel like Nintendo would run after me if this game was private.<br>
-I also don't have plans to make money off of TCG Game but if you want to donate that section is at the very bottom.<br>
-I wanted to make a good pokemon game for a while now and I thought of the idea "Pokemon: TCG Game" UNOFFICIAL.
-## Contributing
-Contributing is very simple.<br>
-Create a <b>Pull Request</b> with only additions. If there is **ANY** removed code it better only be optimizations OR fixing bugs.<br>
-No custom cards can be added by Contribution unless your making an event inside of the game and thats your PR.<br>
-**STATE** **~YOUR~** ***CHANGES!***
-## Future of Lua Software
-We should be rebranding soon because unfortunately I set the Copyright to 2025 on this Project and other Projects have @ 2024.<br>
-I would have to change ALL of the copyrights which I don't wanna do.<br>
-Also thanks MIT for free Copyright!!!!<br>
-Lua Software is still as-is I just switched to Platinum Experiences!<br>
-I'm gonna have fun creating a logo for this.
-## Donation
-Lets keep it simple, my CashApp tag is $auto445.
+# TCG Online 🎉 🌐
+Go Online and Unbox Pokemon Packs on The Go, at Home, or anywhere else!<br>
+We want to add Trading and Battling so if you wanna help throw out a PR.
+## Unboxing & Picking with Security 🔐
+We make it secure so players cant manipulate what they get!<br>
+We get their Inventory and add the cards pre-picked.<br>
+No user data is manipulatable, making it a secure unboxing sim.
+## Account ID? 🤔
+You can find your Account ID on the bottom of your inventory.<br>
+This is so the admins can reset your password!!<br>
+Provide your Email 📧, Account ID 🪪, and Favorite Card in your Inventory!
+## Password Hashing ⚡️
+We are still working on Password Hashing, in the meantime, add your own way 🔐
+## Events Currently Online 🔥
+Our official website will have events and the events will be added here too.
+### Base Set Event
+Unbox expensive Base Set Pokemon for $10,000 PokeCoins.<br>
+The beloved Charizard is worth $100K!
+### Gold Revolutions Event
+Unbox 4 EXTREME Rare Gold Cards! ⭐️<br>
+These cards are worth $20K each with a 1 in 100 Pack rarity!<br>
+Each Pack is $500 PokeCoins but this can change before Website Release ❤️<br>
+### Other Events Planned
+- Water Legends
+- Fire Legends
+- Psychic Masterminds
+- Ultimate Pack (WL, FL, PM, and the 4 Gold Cards from GR) [$1,000,000 PokeCoins]
+- Rich Pack (Rich Cards worth only $5 but cool to have for $10,000,000 PokeCoins per pack, which is easy currently)
+## Contributors (Leaderboard)
+- 🏆 liablelua (The Owner of TCG Online 🌐) - 0 PRs
+- 🥇 No One - 0 PRs
+- 🥈 No One - 0 PRs
+- 🥉 No One - 0 PRs
+- 🎖️ No One - 0 PRs (Copy and paste when they are PRs 4th-All will. be this)

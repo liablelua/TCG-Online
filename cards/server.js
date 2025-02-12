@@ -34,10 +34,25 @@ const getUsers = () => {
   }
 };
 
+const getInventory = (userId) => {
+  const usersFile = path.join(process.cwd(), "data", "inventory", `${userId}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(usersFile, "utf-8"));
+  } catch (error) {
+    return {};
+  }
+};
+
 // Helper function to save user data
 const saveUsers = (users) => {
   const usersFile = path.join(process.cwd(), "data", "users.json");
   fs.writeFileSync(usersFile, JSON.stringify(users, null, 2));
+};
+
+// Helper function to save user data
+const saveInventory = (userId, data) => {
+  const usersFile = path.join(process.cwd(), "data", "inventory", userId + ".json");
+  fs.writeFileSync(usersFile, JSON.stringify(data, null, 2));
 };
 
 // Helper function to get or create user
@@ -47,13 +62,41 @@ const getOrCreateUser = (userId) => {
     users[userId] = {
       id: userId,
       pokeCoins: 5000, // Default starting coins
-      inventory: [],
       lastCoinClaim: new Date().toISOString(),
       lastWonderPick: new Date().toISOString(),
     };
     saveUsers(users);
   }
   return users[userId];
+};
+
+const getOrCreateUserInventory = (userId) => {
+  // Create inventory directory if it doesn't exist
+  const inventoryDir = path.join(process.cwd(), "data", "inventory");
+  if (!fs.existsSync(inventoryDir)) {
+    fs.mkdirSync(inventoryDir, { recursive: true });
+  }
+
+  const inventoryFile = path.join(inventoryDir, `${userId}.json`);
+  let inventory;
+
+  try {
+    // Try to read existing inventory
+    if (fs.existsSync(inventoryFile)) {
+      inventory = JSON.parse(fs.readFileSync(inventoryFile, "utf-8"));
+    } else {
+      // Create new inventory if file doesn't exist
+      inventory = [];
+      fs.writeFileSync(inventoryFile, JSON.stringify(inventory, null, 2));
+    }
+  } catch (error) {
+    console.error(`Error handling inventory for user ${userId}:`, error);
+    // Create new inventory in case of error
+    inventory = [];
+    fs.writeFileSync(inventoryFile, JSON.stringify(inventory, null, 2));
+  }
+
+  return inventory;
 };
 
 const fileReaderJson = (path) => {
@@ -108,6 +151,22 @@ app.prepare().then(() => {
     res.json(safeUserData);
   });
 
+  server.get("/api/inventory", (req, res) => {
+    // If no session exists, create a new session
+    if (!req.session.userId) {
+      return res.status(401).json({ message: "Not authenticated" });
+    }
+
+    const userData = req.session.userId;
+    const inventory = getOrCreateUserInventory(userData);
+
+    if (!userData) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.json(inventory);
+  });
+
   server.post("/api/auth", (req, res) => {
     const { email, password, mode } = req.body;
     const users = getUsers();
@@ -126,10 +185,11 @@ app.prepare().then(() => {
           email,
           password, // In production, hash the password!
           pokeCoins: 5000,
-          inventory: [],
           lastCoinClaim: new Date().toISOString(),
           lastWonderPick: new Date().toISOString(),
         };
+
+        getOrCreateUserInventory(userId);
 
         users[userId] = newUser;
         saveUsers(users);
@@ -183,18 +243,21 @@ app.prepare().then(() => {
 
   server.post("/api/open-pack", (req, res) => {
     const user = getOrCreateUser(req.session.userId);
-    if (user.pokeCoins < 500) {
-      return res.status(400).json({ error: "Insufficient PokeCoins" });
-    }
 
-    user.pokeCoins -= 500;
     const sets = fileReaderJson("./API/sets/en.json");
     const setId = req.body.setId;
     const selectedSet = sets.find((set) => set.id === setId);
+    const purch = setId == 'base1' ? 10000 : 500;
 
     if (!selectedSet) {
       return res.status(400).json({ error: "Set not found" });
     }
+
+    if (user.pokeCoins < purch) {
+      return res.status(400).json({ error: "Insufficient PokeCoins" });
+    }
+
+    user.pokeCoins -= purch;
 
     const cards = fileReaderJson(`./API/cards/${selectedSet.id}.json`);
     const pack = [];
@@ -203,8 +266,10 @@ app.prepare().then(() => {
       pack.push(cards[randomIndex]);
     }
 
-    user.inventory = [...user.inventory, ...pack];
+    let inventory = getOrCreateUserInventory(req.session.userId);
+    inventory = [...inventory, ...pack];
     saveUsers({ ...getUsers(), [req.session.userId]: user });
+    saveInventory(req.session.userId, inventory);
     res.json(pack);
   });
 
@@ -245,7 +310,9 @@ app.prepare().then(() => {
       selectedCard: SelectedCard,
     };
 
-    user.inventory = [...user.inventory, ...SelectedCard];
+    let inventory = getOrCreateUserInventory(req.session.userId);
+    inventory = [...inventory, ...SelectedCard];
+    saveInventory(req.session.userId, inventory);
     saveUsers({ ...getUsers(), [req.session.userId]: user });
     res.json(RealData);
   });
@@ -255,12 +322,14 @@ app.prepare().then(() => {
     const { cardId } = req.body;
     const user = getOrCreateUser(req.session.userId);
 
-    const cardIndex = user.inventory.findIndex((card) => card.id === cardId);
+    let inventory = getOrCreateUserInventory(req.session.userId);
+
+    const cardIndex = inventory.findIndex((card) => card.id === cardId);
     if (cardIndex === -1) {
       return res.status(404).json({ error: "Card not found" });
     }
 
-    const card = user.inventory[cardIndex];
+    const card = inventory[cardIndex];
     const rarityValues = {
       Common: 2,
       Uncommon: 5,
@@ -274,10 +343,16 @@ app.prepare().then(() => {
       "Illustration Rare": 2500,
       "Shiny Rare": 1000,
       "Rare Rainbow": 3000,
+      "No Rarity": 200,
+      "Rare Holo EX": 800,
+      Promo: 200,
+      Gold: 20000
     };
 
-    user.pokeCoins += rarityValues[card.rarity] || 0;
-    user.inventory.splice(cardIndex, 1);
+    user.pokeCoins += card.id.split("-")[0] == "base1" ? rarityValues[card.rarity] * 1000 | 200 : rarityValues[card.rarity] || 0;
+
+    inventory.splice(cardIndex, 1);
+    saveInventory(req.session.userId, inventory);
     saveUsers({ ...getUsers(), [req.session.userId]: user });
     res.json({ success: true, pokeCoins: user.pokeCoins });
   });
@@ -288,6 +363,6 @@ app.prepare().then(() => {
 
   server.listen(3000, (err) => {
     if (err) throw err;
-    console.log("> Ready on http://localhost:3000");
+    console.log("> TCG Online ready on Port 3000!");
   });
 });

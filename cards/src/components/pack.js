@@ -16,6 +16,8 @@ const PokemonPackOpener = () => {
   const [timeUntilClaim, setTimeUntilClaim] = useState('');
   const [timeUntilWonder, setTimeUntilWonder] = useState('');
   const [hasSelected, setHasSelected] = useState(false);
+  const [rar, setRar] = useState('');
+  const [inventory, setInventory] = useState([]);
 
   const rarityColors = {
     'Common': 'bg-gray-300',
@@ -29,7 +31,10 @@ const PokemonPackOpener = () => {
     'Hyper Rare': 'bg-yellow-100',
     'Illustration Rare': 'bg-pink-200',
     'Shiny Rare': 'bg-gray-100',
-    'Rare Rainbow': 'rainbow'
+    'Rare Rainbow': 'wrapper',
+    "Rare Holo EX": 800,
+    Promo: 200,
+    Gold: 'bg-yellow-200'
   };
 
   // I'm not good at deciding Pokemon values
@@ -46,7 +51,11 @@ const PokemonPackOpener = () => {
     'Hyper Rare': 3500,
     'Illustration Rare': 2500,
     'Shiny Rare': 1000,
-    'Rare Rainbow': 3000
+    'Rare Rainbow': 3000,
+    'No Rarity': 1,
+    "Rare Holo EX": 800,
+    Promo: 200,
+    Gold: 20000
   };
 
   useEffect(() => {
@@ -63,9 +72,19 @@ const PokemonPackOpener = () => {
     };
 
     initializeData();
-    const timer = setInterval(updateTimers, 1000);
-    return () => clearInterval(timer);
   }, []);
+
+  // Separate useEffect for timer
+  useEffect(() => {
+    let timer;
+    if (user) {
+      updateTimers(); // Initial update
+      timer = setInterval(updateTimers, 1000);
+    }
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, [user]);
 
   const fetchUser = async () => {
     try {
@@ -74,9 +93,14 @@ const PokemonPackOpener = () => {
 
       if (!userResponse.ok) {
         setUser(null);
+        setInventory([]);
         return;
       }
-        
+
+      const invResponse = await fetch('/api/inventory');
+      const invData = await invResponse.json();
+
+      setInventory(invData);
       setUser(userData);
       setUser(userData);
       setTimeUntilClaim(userData.lastCoinClaim);
@@ -90,43 +114,44 @@ const PokemonPackOpener = () => {
 
   const fetchSets = async () => {
     try {
-      const response = await fetch('/v1/sets', {
-        headers: { 'X-Api-Key': process.env.NEXT_PUBLIC_POKEMON_TCG_API_KEY }
-      });
+      const response = await fetch('/v1/sets');
       const data = await response.json();
-      setSets(data.reverse().slice(0, 5));
+      setSets([...data.slice(0, 1),...data.reverse().slice(0, 5)]);
     } catch (error) {
       console.error('Failed to fetch sets:', error);
     }
   };
 
-  const updateTimers = () => {
-    if (!user) return;
+  const updateTimers = (currentUser = user) => {
+    if (!currentUser) return;
 
-    const now = new Date();
-    const nextClaim = new Date(user.lastCoinClaim);
+    const now = new Date().getTime();
+    const hourFormula = 60 * 60 * 1000;
+    const nextClaim = new Date(currentUser.lastCoinClaim).getTime() + (24 * hourFormula);
+    const nextWonder = new Date(currentUser.lastWonderPick).getTime() + (8 * hourFormula);
+    const claimDiff = nextClaim - now;
+    const wonderDiff = nextWonder - now;
 
-    const nextWonder = new Date(user.lastWonderPick);
-
-    if (now < nextClaim) {
-      const diff = nextClaim - now;
-      setTimeUntilClaim(formatTime(diff));
-    } else {
+    if (claimDiff <= 0) {
       setTimeUntilClaim('Available!');
+    } else {
+      setTimeUntilClaim(formatTime(claimDiff));
     }
 
-    if (now < nextWonder) {
-      const diff = nextWonder - now;
-      setTimeUntilWonder(formatTime(diff));
-    } else {
+    if (wonderDiff <= 0) {
       setTimeUntilWonder('Available!');
+    } else {
+      setTimeUntilWonder(formatTime(wonderDiff));
     }
   };
 
   const formatTime = (ms) => {
+    if (ms <= 0) return 'Available!';
+    
     const hours = Math.floor(ms / 3600000);
     const minutes = Math.floor((ms % 3600000) / 60000);
     const seconds = Math.floor((ms % 60000) / 1000);
+    
     return `${hours}h ${minutes}m ${seconds}s`;
   };
 
@@ -239,6 +264,9 @@ const PokemonPackOpener = () => {
           <span className="font-bold">{user.pokeCoins} PokeCoins</span>
         </div>
       </div>
+      <h3>Base & Gold Legends Event!</h3>
+      <h4>Good Luck! Can you unbox all 4 Gold Cards?</h4>
+      <br></br>
 
       {/* Rest of the component remains the same, but use user.pokeCoins 
           instead of user?.pokeCoins since we now have default values */}
@@ -252,7 +280,7 @@ const PokemonPackOpener = () => {
         </div>
         <div className="p-4 border rounded">
           <h2 className="font-semibold flex items-center mb-2">
-            <Star className="mr-2" /> Wonder Pick
+            <Star className="mr-2" /> Random Card
           </h2>
           <p>{timeUntilWonder}</p>
         </div>
@@ -282,7 +310,7 @@ const PokemonPackOpener = () => {
           disabled={!selectedSet || loading || user.pokeCoins < 500}
           className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:opacity-50"
         >
-          {loading ? 'Opening Pack...' : 'Open Pack (500 PokeCoins)'}
+          {loading ? 'Opening Pack...' : selectedSet && selectedSet.id == "base1" ? 'Open Pack (10000 PokeCoins)' : 'Open Pack (500 PokeCoins)'}
         </button>
 
         <button 
@@ -290,7 +318,7 @@ const PokemonPackOpener = () => {
           disabled={!selectedSet || (timeUntilWonder !== 'Available!' && user.pokeCoins < 3000)}
           className="bg-purple-500 text-white p-2 rounded hover:bg-purple-600 disabled:opacity-50"
         >
-          Wonder Pick (3000 PokeCoins or 8hr Wait)
+          Random Card ({timeUntilWonder == 'Available!' ? "Free" : "3000 PokeCoins"})
         </button>
       </div>
 
@@ -305,14 +333,14 @@ const PokemonPackOpener = () => {
                 className={`p-2 rounded ${rarityColors[card.rarity] || 'bg-gray-200'}`}
               >
                 <img 
-                  src={`https://wsrv.nl?url=${card.images.small}`}
+                  src={card.id.split("-")[0] == "gold" ? card.images.small : `https://wsrv.nl?url=${card.images.small}`}
                   alt={card.name} 
                   className="w-full h-auto object-contain"
                 />
                 <div className="text-center mt-1">
                   <p className="text-xs font-semibold">{card.name}</p>
                   <p className="text-xs text-gray-600">{card.rarity || 'No Rarity'}</p>
-                  <div className="text-xs text-gray-600">Value: {rarityValues[card.rarity]} coins</div>
+                  <div className="text-xs text-gray-600">Value: {card.id.split("-")[0] == "base1" ? rarityValues[card.rarity] * 1000 || 200 : rarityValues[card.rarity]} coins</div>
                   <button
                     onClick={() => sellCard(card)}
                     className="mt-1 px-2 py-1 bg-green-500 text-white text-xs rounded hover:bg-green-600"
@@ -352,24 +380,24 @@ const PokemonPackOpener = () => {
       )}
 
       {/* Inventory Display */}
-      {user.inventory.length > 0 && (
+      {inventory.length > 0 && (
         <div className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Your Inventory</h2>
           <div className="grid grid-cols-5 gap-2">
-            {user.inventory.map((card, index) => (
+            {inventory.map((card, index) => (
               <div 
                 key={index} 
                 className={`p-2 rounded ${rarityColors[card.rarity] || 'bg-gray-200'}`}
               >
                 <img 
-                  src={`https://wsrv.nl?url=${card.images.small}`}
+                  src={card.id.split("-")[0] == "gold" ? card.images.small : `https://wsrv.nl?url=${card.images.small}`}
                   alt={card.name} 
                   className="w-full h-auto object-contain"
                 />
                 <div className="text-center mt-1">
                   <p className="text-xs font-semibold">{card.name}</p>
                   <p className="text-xs text-gray-600">{card.rarity || 'No Rarity'}</p>
-                  <div className="text-xs text-gray-600">Value: {rarityValues[card.rarity]} coins</div>
+                  <div className="text-xs text-gray-600">Value: {card.id.split("-")[0] == "base1" ? rarityValues[card.rarity] * 1000 || 200: rarityValues[card.rarity]} coins</div>
                   <button
                     onClick={() => sellCard(card)}
                     className="mt-1 px-2 py-1 bg-green-500 text-white text-xs rounded hover:bg-green-600"
